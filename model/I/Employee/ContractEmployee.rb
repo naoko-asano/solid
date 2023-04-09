@@ -1,6 +1,6 @@
-require_relative "Employee"
+require_relative "NonRegularEmployee"
 
-class ContractEmployee < Employee
+class ContractEmployee < NonRegularEmployee
   def calculatotePay
     puts "契約社員のお給料を計算します"
   end

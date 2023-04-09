@@ -1,6 +1,6 @@
-require_relative "Employee"
+require_relative "NonRegularEmployee"
 
-class Part < Employee
+class Part < NonRegularEmployee
   def apply_for_paid_leave(**args)
     case args[:length_of_service]
     when (0...1)
