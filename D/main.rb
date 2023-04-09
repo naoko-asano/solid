@@ -1,3 +1,5 @@
 require_relative "PayCalculator"
+require_relative "EmploymentFactory"
 
-PayCalculator.new().calculatePay(:proper)
+employment_status = EmploymentFactory.new().build(:proper)
+PayCalculator.new().calculatePay(employment_status)
