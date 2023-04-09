@@ -1,8 +1,11 @@
+require_relative "Proper"
+require_relative "ContractEmployee"
+require_relative "Part"
 
 class EmploymentStatus
   EMPLOYMENT_STATUS = {
-    proper: "proper",
-    contract_employee: "contract_employee",
-    part: 'part'
+    proper: Proper.new,
+    contract_employee: ContractEmployee.new,
+    part: Part.new
   }
 end
