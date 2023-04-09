@@ -4,4 +4,4 @@ require_relative "PaidLeaveApplier"
 PaidLeaveApplier.new().apply_for_paid_leave("proper")
 
 # エラーが発生しない
-PaidLeaveApplier.new().apply_for_paid_leave("part", 0)
+PaidLeaveApplier.new().apply_for_paid_leave("part", length_of_service: 0)
